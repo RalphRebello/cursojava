@@ -29,7 +29,7 @@ public class ConjuntoBaguncado
         System.out.println(conjunto.contains(1));
         System.out.println(conjunto.contains(true));
 
-        Set nums = new HashSet();  //a principio colocar 'Set' e ok
+        Set nums = new HashSet();  //a principio colocar 'Set' eh ok
 
         nums.add(1);
         nums.add(2);
@@ -41,7 +41,7 @@ public class ConjuntoBaguncado
         conjunto.addAll(nums); //uniao de dois conjuntos
         System.out.println(conjunto);
 
-        conjunto.retainAll(nums); //interceçao do conjunto (oq tem em comum)
+        conjunto.retainAll(nums); //iterceçao do conjunto (oq tem em comum)
         System.out.println(conjunto);
 
         conjunto.clear(); //limpa o conjunto

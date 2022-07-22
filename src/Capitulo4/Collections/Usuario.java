@@ -17,7 +17,7 @@ public class Usuario
 //############ METODOS ###################
     public String toString()
     {
-        return "Meu nome eh " + this.nome + ".";
+        return "Meu nome é " + this.nome + ".";
     }
 
 

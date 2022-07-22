@@ -17,6 +17,7 @@ public class Usuario
             boolean emailIgual = outro.email.equals(this.email);
 
             return nomeIgual && emailIgual;
+
         }
         else
         {

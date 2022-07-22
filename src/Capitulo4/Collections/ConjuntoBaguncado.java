@@ -5,7 +5,8 @@ import java.util.Set;
 
 public class ConjuntoBaguncado
 {
-    public static void main(String[] args)
+    @SuppressWarnings({ "rawtypes", "unchecked" }) //impede os warnings
+	public static void main(String[] args)
     {
         HashSet conjunto = new HashSet();
 
@@ -15,16 +16,16 @@ public class ConjuntoBaguncado
         conjunto.add(1);
         conjunto.add('x');
 
-        System.out.println("Tamanho eh -> " + conjunto.size());
+        System.out.println("Tamanho é -> " + conjunto.size());
 
         conjunto.add("teste");
-        System.out.println("Tamanho eh -> " + conjunto.size());
+        System.out.println("Tamanho é -> " + conjunto.size());
 
         System.out.println(conjunto.remove("Teste"));
         System.out.println(conjunto.remove("teste"));
         System.out.println(conjunto.remove('x'));
 
-        System.out.println("Tamanho eh -> " + conjunto.size());
+        System.out.println("Tamanho é -> " + conjunto.size());
         System.out.println(conjunto.contains('x'));
         System.out.println(conjunto.contains(1));
         System.out.println(conjunto.contains(true));
@@ -41,7 +42,7 @@ public class ConjuntoBaguncado
         conjunto.addAll(nums); //uniao de dois conjuntos
         System.out.println(conjunto);
 
-        conjunto.retainAll(nums); //iterceçao do conjunto (oq tem em comum)
+        conjunto.retainAll(nums); //interceçao do conjunto (oq tem em comum)
         System.out.println(conjunto);
 
         conjunto.clear(); //limpa o conjunto

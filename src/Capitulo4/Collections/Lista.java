@@ -1,16 +1,16 @@
 package Capitulo4.Collections;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Lista
 {
     public static void main(String[] args)
     {
-        ArrayList<Usuario> lista = new ArrayList<>();
+        List<Usuario> lista = new ArrayList<>();
+        //ArrayList<Usuario> lista = new ArrayList<>(); mesmo que o de cima
 
         Usuario u1 = new Usuario("Ana");
-
-        String u2 = "Ralph";
 
         lista.add(u1);
         lista.add(new Usuario("Carlos"));
@@ -20,9 +20,14 @@ public class Lista
 
         System.out.println(lista.get(3).nome);
 
-        for (Usuario u: lista)
+        //lista.remove(1);
+        //lista.remove(new Usuario("Manu"));
+        System.out.println("Tem? " + lista.contains(new Usuario("Lia")));
+
+        for (Usuario u : lista)
         {
             System.out.println(u.nome);
-        }
+            //chamando apenas 'u' ele aciona o metodo toString
+        }	//dentro do objeto 'Usuário' e se usar 'u.nome' ele imprime apenas o nome
     }
 }

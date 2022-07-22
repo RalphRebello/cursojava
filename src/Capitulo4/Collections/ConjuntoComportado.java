@@ -12,9 +12,11 @@ public class ConjuntoComportado
         //Set <String> e HashSet<String> -> define o tipo da lista
         //Set<String> lista = new HashSet<String>();
         SortedSet<String> lista = new TreeSet<>(); //no segundo da pra usar apenas '<>'
+        
+        //SortedSet e TreeSet ordena o conjunto
 
-        lista.add("Ralph");
-        lista.add("Hina");
+        lista.add("Ralph"); //é possivel adicionar apenas strings por causa da 
+        lista.add("Hina");  //pré definição em Set<String> ou SortedSet<String>
         lista.add("Nala");
         lista.add("Nick");
 

@@ -7,12 +7,10 @@ public class Equals
     public static void main(String[] args)
     {
         Usuario u1 = new Usuario();
-
         u1.nome = "Ralph Rebello";
         u1.email = "ralph.rebello8@gmail.com";
 
         Usuario u2 = new Usuario();
-
         u2.nome = "Ralph Rebello";
         u2.email = "ralph.rebello8@gmail.com";
 

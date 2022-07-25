@@ -4,8 +4,8 @@ public class Ana
 {
 	//atributos
 	@SuppressWarnings("unused")
-	private String segredo = "...";
-	String facoDentroDeCasa = "..."; //atributo default
-	protected String formaDeFalar = "...";
-	public String todosSabem = "...";	
+	private String segredo = "..."; //pode ver apenas dentro da classe
+	String facoDentroDeCasa = "..."; //atributo default (classe)
+	protected String formaDeFalar = "..."; //protected (apenas por herança)
+	public String todosSabem = "...";	//todos pode ver
 }

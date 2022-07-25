@@ -1,4 +1,8 @@
-package OrientacaoObjeto.Heranca;
+package OrientacaoObjeto.Heranca.programaPrincipal;
+
+import OrientacaoObjeto.Heranca.Direcao;
+import OrientacaoObjeto.Heranca.Heroi;
+import OrientacaoObjeto.Heranca.Monstro;
 
 public class Jogo 
 {
@@ -16,8 +20,8 @@ public class Jogo
 		System.out.println("Posição monstro " + monstro.x + "|" + monstro.y);
 		System.out.println("Vida monstro " + monstro.vida);
 		
-		System.out.println("Posição herio " + heroi.x + "|" + heroi.y);
-		System.out.println("Vida herio " + heroi.vida);
+		System.out.println("Posição heroi " + heroi.x + "|" + heroi.y);
+		System.out.println("Vida heroi " + heroi.vida);
 		
 		monstro.atacar(heroi);
 		heroi.atacar(monstro);

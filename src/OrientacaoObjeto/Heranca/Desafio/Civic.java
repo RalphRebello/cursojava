@@ -2,12 +2,12 @@ package OrientacaoObjeto.Heranca.Desafio;
 
 public class Civic extends Carro 
 {
-	Civic()
+	public Civic()
 	{
 		this(200);
 	}
 	
-	Civic(int vel_max)
+	public Civic(int vel_max)
 	{
 		super(vel_max);
 	}

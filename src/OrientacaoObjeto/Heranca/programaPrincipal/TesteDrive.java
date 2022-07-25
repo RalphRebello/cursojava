@@ -1,4 +1,7 @@
-package OrientacaoObjeto.Heranca.Desafio;
+package OrientacaoObjeto.Heranca.programaPrincipal;
+
+import OrientacaoObjeto.Heranca.Desafio.Civic;
+import OrientacaoObjeto.Heranca.Desafio.Ferrari;
 
 public class TesteDrive 
 {
@@ -6,13 +9,18 @@ public class TesteDrive
 	{
 		//Carro civic = new Civic(); # funciona da mesma forma que o de baixo
 		Civic civic = new Civic();
-		System.out.println(civic.VELOCIDADE_MAXIMA);
+		System.out.println("Civic " + civic.VELOCIDADE_MAXIMA);
 		
 		Ferrari ferrari = new Ferrari();
-		System.out.println(ferrari.VELOCIDADE_MAXIMA);
+		System.out.println("Ferrari " + ferrari.VELOCIDADE_MAXIMA);
 		
 		//System.out.println("Civic -> " + civic.velocidadeAtual);
 		//System.out.println("Ferrari -> " + ferrari.velocidadeAtual);
+
+		//ferrari.ligarTurbo();
+		ferrari.desligarTurbo();
+		ferrari.ligarAr();
+		//ferrari.desligarAr();
 		
 		for(int i=0; i<30; i++)
 		{

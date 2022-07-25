@@ -3,27 +3,47 @@ package OrientacaoObjeto.Heranca.Desafio;
 public class Carro 
 {
 	//atributos
-	final int VELOCIDADE_MAXIMA;
+	public final int VELOCIDADE_MAXIMA;
 	int velocidadeAtual = 0;
-	int fator_aceleracao = 5;
-	int fator_frenagem = 5;
+	private int fator_aceleracao = 5;
+	private int fator_frenagem = 5;
 	
 	//construtores
-	Carro(int vel_max)
+	protected Carro(int vel_max)
 	{
 		VELOCIDADE_MAXIMA = vel_max;
 	}
 	
 	//metodos
-	void acelerar()
+	public int getFator_aceleracao() 
 	{
-		if(velocidadeAtual + fator_aceleracao > VELOCIDADE_MAXIMA)
+		return fator_aceleracao;
+	}
+
+	public void setFator_aceleracao(int fator_aceleracao) 
+	{
+		this.fator_aceleracao = fator_aceleracao;
+	}
+
+	public int getFator_frenagem() 
+	{
+		return fator_frenagem;
+	}
+
+	public void setFator_frenagem(int fator_frenagem) 
+	{
+		this.fator_frenagem = fator_frenagem;
+	}
+	//--------------------------------------------------------------------	
+	public void acelerar()
+	{
+		if(velocidadeAtual + getFator_aceleracao() > VELOCIDADE_MAXIMA)
 			velocidadeAtual = VELOCIDADE_MAXIMA;
 		else
-			velocidadeAtual += fator_aceleracao;
+			velocidadeAtual += getFator_aceleracao();
 	}
-	
-	void frear()
+
+	public void frear()
 	{
 		if(velocidadeAtual > 0)
 			velocidadeAtual -= fator_frenagem;

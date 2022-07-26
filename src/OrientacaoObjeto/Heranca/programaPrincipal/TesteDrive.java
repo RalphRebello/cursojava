@@ -17,10 +17,12 @@ public class TesteDrive
 		//System.out.println("Civic -> " + civic.velocidadeAtual);
 		//System.out.println("Ferrari -> " + ferrari.velocidadeAtual);
 
+		//USANDO OS METODOS DAS INTERFACES ESPORTIVO E LUXO
 		//ferrari.ligarTurbo();
 		ferrari.desligarTurbo();
 		ferrari.ligarAr();
 		//ferrari.desligarAr();
+		System.out.println(ferrari.velocidadeDoAr());
 		
 		for(int i=0; i<30; i++)
 		{

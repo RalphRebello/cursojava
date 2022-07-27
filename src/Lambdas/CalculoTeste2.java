@@ -21,5 +21,8 @@ public class CalculoTeste2
 //		por conta das func's lambdas não se faz necessario criar uma classe que implementa
 //		os metodos de uma interface, as lambdas já implementam os metodos direto com uma
 //		sintaxe mais enxuta.
+		
+		System.out.println(calculo.legal()); //acesso pela variavel
+		System.out.println(Calculo.muitolegal()); //acesso pela instancia
 	}
 }
